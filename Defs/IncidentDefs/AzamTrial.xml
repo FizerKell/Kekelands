@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<IncidentDef>
+		<defName>AzamTrial</defName>
+		<label>испытание Азама</label>
+
+		<category>Misc</category>
+
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+
+		<workerClass>AzamPrime.IncidentWorker_AzamTrial</workerClass>
+
+		<baseChance>1</baseChance>
+
+	</IncidentDef>
+
+</Defs>

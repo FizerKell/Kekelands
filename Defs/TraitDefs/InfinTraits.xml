@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- Цундере -->
+	<TraitDef>
+		<defName>Tsundere</defName>
+		<commonality>0.12</commonality>
+
+		<degreeDatas>
+			<li>
+				<label>цундере</label>
+				<description>Старательно делает вид, что ему на всех плевать. Почему тогда он всё ещё здесь — вопрос открытый.</description>
+
+				<statOffsets>
+					<SocialImpact>-0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+
+	<!-- Нытик -->
+	<TraitDef>
+		<defName>Whiner</defName>
+		<commonality>0.20</commonality>
+
+		<degreeDatas>
+			<li>
+				<label>нытик</label>
+				<description>Найдёт повод пожаловаться даже тогда, когда всё идёт хорошо.</description>
+
+				<statOffsets>
+					<MentalBreakThreshold>0.05</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+
+	<!-- Агрессия -->
+	<TraitDef>
+		<defName>Aggressive</defName>
+		<commonality>0.15</commonality>
+
+		<degreeDatas>
+			<li>
+				<label>агрессия</label>
+				<description>Сначала злится. Потом думает. Иногда до второго этапа дело не доходит.</description>
+
+				<statOffsets>
+					<MeleeHitChance>0.05</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+
+</Defs>

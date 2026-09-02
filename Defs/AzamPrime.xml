@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <StorytellerDef ParentName="BaseStoryteller">
+
+        <defName>Azam_Prime</defName>
+
+        <label>Азам Прайм</label>
+
+        <description>ЗАЧЕМ АЗАМ ПРАЙМ СДЕЛАЛ ВСЁ ЭТО?
+Азам Прайм — первый Азам, который защищает долбоёбов. Он не просто обычный Азам, он низший разум с мега крутой моралью, привязанностью, и человечностью. Он верит в дружбу с ниггерами. Для него это слабость. Он защищает бромо и cnt в каждой вселенной, но зачем? Просто ради забавы? Чтобы посмотреть, как другие олды страдают? Чтобы доказать, что он лучше? Умнее? Изобритательнее?
+
+Возможно, он действительно получает удовольствие, наблюдая, как рушится всё, во что верят олды. Он ставит им выбор: олды или мигранты. Но, по логике, не важно, что они выберут. Они уже проиграли. Они уже слабее.
+
+Но, как мне кажется, он делает это не просто ради превосходства. Он ищет Азама, который сумел бы опередить его, того, кто защищал долбоёбов раньше, кто думает лучше, кто, возможно, знает то, чего не знает даже он. Аллаха, который бросит ему настоящий вызов. Прайм не просто уничтожает конкуренцию. Он охотится за зеркалом, за собой, только лучшим. Значит, где-то в мультивселенной может существовать нормальный Азам, тот, кто не просто равен Прайму, может быть связан с ним лично как враг или как тот, кто когда-то был ему другом.</description>
+
+        <portraitLarge>UI/HeroArt/Storytellers/AzamPrime</portraitLarge>
+
+        <portraitTiny>UI/HeroArt/Storytellers/AzamPrimeTiny</portraitTiny>
+
+        <listOrder>50</listOrder>
+
+        <comps>
+
+			<li Class="AzamPrime.StorytellerCompProperties_AzamPhases">
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+            <li Class="StorytellerCompProperties_ClassicIntro"/>
+			
+<!--
+            
+            <li Class="StorytellerCompProperties_OnOffCycle">
+    <category>ThreatBig</category>
+
+    <allowedTargetTags>
+        <li>Map_PlayerHome</li>
+    </allowedTargetTags>
+
+    <minDaysPassed>5</minDaysPassed>
+    <onDays>3</onDays>
+    <offDays>7</offDays>
+    <minSpacingDays>0.8</minSpacingDays>
+    <numIncidentsRange>2~3</numIncidentsRange>
+            </li>
+-->
+            <!-- Азам особенно жесток на картах RaidBeacon -->
+            <li Class="StorytellerCompProperties_ThreatsGenerator">
+    <allowedTargetTags>
+        <li>Map_RaidBeacon</li>
+    </allowedTargetTags>
+
+    <parms>
+        <allowedThreats>Raids</allowedThreats>
+        <onDays>1</onDays>
+        <offDays>0.5</offDays>
+        <minSpacingDays>0.25</minSpacingDays>
+        <numIncidentsRange>1~2</numIncidentsRange>
+        <minThreatPoints>500</minThreatPoints>
+    </parms>
+            </li>
+
+            <li Class="StorytellerCompProperties_RandomMain">
+    <allowedTargetTags>
+        <li>Map_PlayerHome</li>
+    </allowedTargetTags>
+
+    <minDaysPassed>2</minDaysPassed>
+    <mtbDays>2.5</mtbDays>
+
+    
+            </li>
+<!--
+            <li Class="StorytellerCompProperties_OnOffCycle">
+        <category>ThreatSmall</category>
+        <minDaysPassed>11.0</minDaysPassed>
+        <onDays>4.6</onDays>
+        <offDays>6.0</offDays>
+        <numIncidentsRange>0~1</numIncidentsRange>
+        <acceptPercentFactorPerThreatPointsCurve>
+        <points>
+            <li>(500, 1)</li>
+            <li>(1500, 1)</li>
+            <li>(3000, 0.4)</li>
+            <li>(5000, 0)</li>
+        </points>
+        </acceptPercentFactorPerThreatPointsCurve>
+            </li>
+-->
+            <li Class="StorytellerCompProperties_CategoryMTB">
+        <category>Misc</category>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDays>3.5</mtbDays>
+            </li>
+
+            <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+
+            <li Class="StorytellerCompProperties_Disease">
+        <category>DiseaseHuman</category>
+        <minDaysPassed>9</minDaysPassed>
+            </li>
+
+             <li Class="StorytellerCompProperties_Disease">
+        <category>DiseaseAnimal</category>
+        <minDaysPassed>9</minDaysPassed>
+            </li>
+
+            <li Class="StorytellerCompProperties_FactionInteraction">
+        <incident>RaidFriendly</incident>
+        <baseIncidentsPerYear>4</baseIncidentsPerYear>
+        <minSpacingDays>0.4</minSpacingDays>
+        <fullAlliesOnly>true</fullAlliesOnly>
+        <minDanger>High</minDanger>
+            </li>
+
+            <li Class="StorytellerCompProperties_FactionInteraction">
+        <incident>TraderCaravanArrival</incident>
+        <minDaysPassed>5</minDaysPassed>
+        <baseIncidentsPerYear>8</baseIncidentsPerYear>
+        <minSpacingDays>4</minSpacingDays>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_FactionInteraction">
+        <incident>VisitorGroup</incident>
+        <minDaysPassed>3</minDaysPassed>
+        <baseIncidentsPerYear>6</baseIncidentsPerYear>
+        <minSpacingDays>4</minSpacingDays>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_FactionInteraction">
+        <incident>TravelerGroup</incident>
+        <minDaysPassed>1</minDaysPassed>
+        <baseIncidentsPerYear>6</baseIncidentsPerYear>
+        <minSpacingDays>1</minSpacingDays>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>Misc</category>
+        <allowedTargetTags>
+          <li>Caravan</li>
+          <li>Map_TempIncident</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>ThreatSmall</category>
+        <applyCaravanVisibility>true</applyCaravanVisibility>
+        <allowedTargetTags>
+          <li>Caravan</li>
+          <li>Map_TempIncident</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_CategoryIndividualMTBByBiome">
+        <category>ThreatBig</category>
+        <applyCaravanVisibility>true</applyCaravanVisibility>
+        <allowedTargetTags>
+          <li>Caravan</li>
+          <li>Map_TempIncident</li>
+        </allowedTargetTags>
+            </li>
+
+            <li Class="StorytellerCompProperties_RandomQuest">
+        <category>GiveQuest</category>
+        <allowedTargetTags>
+          <li>World</li>
+        </allowedTargetTags>
+        <onDays>10</onDays>
+        <numIncidentsRange>1</numIncidentsRange>
+        <acceptFractionByDaysPassedCurve>
+          <points>
+            <li>(8, 0)</li>
+            <li>(15, 1)</li>
+          </points>
+        </acceptFractionByDaysPassedCurve>
+        <minSpacingDays>3</minSpacingDays>
+        <disableIfAnyModActive>
+          <li>Ludeon.RimWorld.Royalty</li>
+        </disableIfAnyModActive>
+            </li>
+
+            <li Class="StorytellerCompProperties_CategoryMTB">
+        <category>Misc</category>
+        <allowedTargetTags>
+          <li>World</li>
+        </allowedTargetTags>
+        <minDaysPassed>15</minDaysPassed>
+        <mtbDays>10</mtbDays>
+            </li>
+
+            <li Class="StorytellerCompProperties_OnOffCycle">
+        <incident>OrbitalTraderArrival</incident>
+        <onDays>8</onDays>
+        <offDays>5</offDays>
+        <numIncidentsRange>1~2</numIncidentsRange>
+            </li>
+
+            <li Class="StorytellerCompProperties_Triggered">
+        <incident>StrangerInBlackJoin</incident>
+        <delayTicks>180</delayTicks>
+            </li>
+
+			<li Class="StorytellerCompProperties_OnOffCycle">
+				<incident>AzamTrial</incident>
+
+				<minDaysPassed>15</minDaysPassed>
+
+				<onDays>5</onDays>
+				<offDays>15</offDays>
+
+				<numIncidentsRange>1</numIncidentsRange>
+
+				<allowedTargetTags>
+					<li>Map_PlayerHome</li>
+				</allowedTargetTags>
+			</li>
+
+        </comps>
+
+    </StorytellerDef>
+
+</Defs>
