@@ -3,7 +3,7 @@ using Verse;
 
 namespace AzamPrime
 {
-    public class IncidentWorker_BromoArrival : IncidentWorker
+    public class IncidentWorker_InfinArrival : IncidentWorker
     {
         protected override bool TryExecuteWorker(IncidentParms parms)
         {

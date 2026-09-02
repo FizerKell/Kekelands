@@ -61,7 +61,7 @@
         <minThreatPoints>500</minThreatPoints>
     </parms>
             </li>
-
+			<!--
             <li Class="StorytellerCompProperties_RandomMain">
     <allowedTargetTags>
         <li>Map_PlayerHome</li>
@@ -72,7 +72,6 @@
 
     
             </li>
-<!--
             <li Class="StorytellerCompProperties_OnOffCycle">
         <category>ThreatSmall</category>
         <minDaysPassed>11.0</minDaysPassed>
@@ -213,7 +212,7 @@
         <incident>StrangerInBlackJoin</incident>
         <delayTicks>180</delayTicks>
             </li>
-
+<!--
 			<li Class="StorytellerCompProperties_OnOffCycle">
 				<incident>AzamTrial</incident>
 
@@ -228,7 +227,7 @@
 					<li>Map_PlayerHome</li>
 				</allowedTargetTags>
 			</li>
-
+-->
         </comps>
 
     </StorytellerDef>

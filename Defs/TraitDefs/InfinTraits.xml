@@ -4,7 +4,7 @@
 
 	<!-- Цундере -->
 	<TraitDef>
-		<defName>Tsundere</defName>
+		<defName>Kekelands_Tsundere</defName>
 		<commonality>0.12</commonality>
 
 		<degreeDatas>
@@ -22,7 +22,7 @@
 
 	<!-- Нытик -->
 	<TraitDef>
-		<defName>Whiner</defName>
+		<defName>Kekelands_Whiner</defName>
 		<commonality>0.20</commonality>
 
 		<degreeDatas>
@@ -40,7 +40,7 @@
 
 	<!-- Агрессия -->
 	<TraitDef>
-		<defName>Aggressive</defName>
+		<defName>Kekelands_Aggressive</defName>
 		<commonality>0.15</commonality>
 
 		<degreeDatas>
