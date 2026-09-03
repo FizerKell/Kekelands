@@ -31,42 +31,61 @@ namespace AzamPrime
 
             ConfigureInfin(pawn);
 
-            private void ConfigureInfin(Pawn pawn)
-        {
-            // Имя
-            pawn.Name = new NameSingle("Инфин");
+            IntVec3 spawnCell;
 
-            // Пол
+            if (!CellFinder.TryFindRandomEdgeCellWith(
+                c => map.reachability.CanReachColony(c),
+                map,
+                CellFinder.EdgeRoadChance_Neutral,
+                out spawnCell))
+            {
+                Log.Warning(
+                    "[AzamPrime] Не удалось найти точку появления Инфина."
+                );
+
+                return false;
+            }
+
+            GenSpawn.Spawn(
+                pawn,
+                spawnCell,
+                map
+            );
+
+            Find.LetterStack.ReceiveLetter(
+                "Инфин прибыл",
+                "Инфин появился в вашей колонии.",
+                LetterDefOf.PositiveEvent,
+                new LookTargets(pawn)
+            );
+
+            return true;
+        }
+
+        private void ConfigureInfin(Pawn pawn)
+        {
+            pawn.Name = new NameSingle("Инфин");
             pawn.gender = Gender.Male;
 
-            // Возраст 18 лет
             pawn.ageTracker.AgeBiologicalTicks = 18L * 3600000L;
             pawn.ageTracker.AgeChronologicalTicks = 18L * 3600000L;
 
-            // Удаляем случайные трейты
             pawn.story.traits.allTraits.Clear();
 
             AddTrait(pawn, "Tsundere");
             AddTrait(pawn, "Whiner");
             AddTrait(pawn, "Aggressive");
 
-            // Искусство = 1
-            SkillRecord artistic =
-                pawn.skills.GetSkill(SkillDefOf.Artistic);
+            pawn.skills.GetSkill(SkillDefOf.Artistic).Level = 1;
+            pawn.skills.GetSkill(SkillDefOf.Social).passion = Passion.Major;
+            pawn.skills.GetSkill(SkillDefOf.Intellectual).passion = Passion.Major;
 
-            artistic.Level = 1;
+            SetInfinHair(pawn);
 
-            // Страсть к общению
-            SkillRecord social =
-                pawn.skills.GetSkill(SkillDefOf.Social);
-
-            social.passion = Passion.Major;
-
-            // Страсть к исследованию
-            SkillRecord intellectual =
-                pawn.skills.GetSkill(SkillDefOf.Intellectual);
-
-            intellectual.passion = Passion.Major;
+            ClearGeneratedApparel(pawn);
+            GiveWornShirt(pawn);
+            GiveLegendaryPants(pawn);
+            GiveRevolver(pawn);
         }
 
         private void AddTrait(Pawn pawn, string defName)
@@ -100,7 +119,6 @@ namespace AzamPrime
                 return;
             }
 
-            // Убираем случайное оружие
             if (pawn.equipment.Primary != null)
             {
                 pawn.equipment.DestroyEquipment(pawn.equipment.Primary);
@@ -145,12 +163,6 @@ namespace AzamPrime
                     ArtGenerationContext.Colony
                 );
             }
-
-            pants.HitPoints =
-                System.Math.Max(
-                    1,
-                    (int)(pants.MaxHitPoints * 1f)
-                );
 
             pawn.apparel.Wear(pants);
         }
@@ -197,12 +209,6 @@ namespace AzamPrime
             pawn.apparel.DestroyAll();
         }
 
-        ClearGeneratedApparel(pawn);
-
-        GiveWornShirt(pawn);
-        GiveLegendaryPants(pawn);
-        GiveRevolver(pawn);
-
         private void SetInfinHair(Pawn pawn)
         {
             HairDef hair =
@@ -215,39 +221,6 @@ namespace AzamPrime
             }
 
             pawn.story.HairDef = hair;
-        }
-
-        SetInfinHair(pawn);
-
-        IntVec3 spawnCell;
-
-            if (!CellFinder.TryFindRandomEdgeCellWith(
-                c => map.reachability.CanReachColony(c),
-                map,
-                CellFinder.EdgeRoadChance_Neutral,
-                out spawnCell))
-            {
-                Log.Warning(
-                    "[AzamPrime] Не удалось найти точку появления Инфина."
-                );
-
-                return false;
-            }
-
-            GenSpawn.Spawn(
-                pawn,
-                spawnCell,
-                map
-            );
-
-            Find.LetterStack.ReceiveLetter(
-                "Инфин прибыл",
-                "Инфин появился в вашей колонии.",
-                LetterDefOf.PositiveEvent,
-                new LookTargets(pawn)
-            );
-
-            return true;
         }
     }
 }
