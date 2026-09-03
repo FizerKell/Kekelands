@@ -220,7 +220,7 @@ namespace AzamPrime
                 return;
             }
 
-            pawn.story.HairDef = hair;
+            pawn.story.hairDef = hair;
         }
     }
 }
