@@ -72,9 +72,9 @@ namespace AzamPrime
 
             pawn.story.traits.allTraits.Clear();
 
-            AddTrait(pawn, "Tsundere");
-            AddTrait(pawn, "Whiner");
-            AddTrait(pawn, "Aggressive");
+            AddTrait(pawn, "Kekelands_Tsundere");
+            AddTrait(pawn, "Kekelands_Whiner");
+            AddTrait(pawn, "Kekelands_Aggressive");
 
             pawn.skills.GetSkill(SkillDefOf.Artistic).Level = 1;
             pawn.skills.GetSkill(SkillDefOf.Social).passion = Passion.Major;
