@@ -12,6 +12,16 @@
 
 		<defaultFactionType>PlayerColony</defaultFactionType>
 
+		<initialResistanceRange>
+			<min>0</min>
+			<max>0</max>
+		</initialResistanceRange>
+
+		<initialWillRange>
+			<min>0</min>
+			<max>0</max>
+		</initialWillRange>
+
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
