@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_InfinAdulthood</defName>
+
+		<title>фиктивный человек</title>
+		<titleShort>фиктивный человек</titleShort>
+
+		<baseDesc>
+			Кощмищ сам по себе человек фиктивный. Он являет собой совершенно конченное создание, которое способно только приносить вред. Лицемерное животное, с которым почти невозможно общаться.
+
+			Он может массово унижать/заставлять и манипулировать людьми самыми убогими способами, чтобы принести себе удовольствие. Как минимум модераторский состав он точно подставлял, чтобы они слетали с ролей.
+		</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<skillGains>
+			<Social>4</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+
+		<statOffsets>
+			<SocialImpact>-0.15</SocialImpact>
+			<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</statOffsets>
+	</BackstoryDef>
+
+</Defs>

@@ -70,6 +70,8 @@ namespace AzamPrime
             pawn.ageTracker.AgeBiologicalTicks = 18L * 3600000L;
             pawn.ageTracker.AgeChronologicalTicks = 18L * 3600000L;
 
+            SetInfinAdulthood(pawn);
+
             pawn.story.traits.allTraits.Clear();
 
             AddTrait(pawn, "Kekelands_Tsundere");
@@ -86,6 +88,7 @@ namespace AzamPrime
             GiveWornShirt(pawn);
             GiveLegendaryPants(pawn);
             GiveRevolver(pawn);
+
         }
 
         private void AddTrait(Pawn pawn, string defName)
@@ -221,6 +224,25 @@ namespace AzamPrime
             }
 
             pawn.story.hairDef = hair;
+        }
+
+        private void SetInfinAdulthood(Pawn pawn)
+        {
+            BackstoryDef adulthood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_InfinAdulthood"
+                );
+
+            if (adulthood == null)
+            {
+                Log.Error(
+                    "[AzamPrime] Не найдена взрослая биография Инфина: Kekelands_InfinAdulthood"
+                );
+
+                return;
+            }
+
+            pawn.story.Adulthood = adulthood;
         }
     }
 }
