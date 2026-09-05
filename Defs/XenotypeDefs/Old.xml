@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<XenotypeDef>
+		<defName>Kekelands_Old</defName>
+
+		<label>олд</label>
+
+		<description>Представитель олдов Кекелендса.</description>
+
+		<inheritable>false</inheritable>
+
+		<genes>
+			<li>Kekelands_Skin_Old</li>
+		</genes>
+
+	</XenotypeDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<XenotypeDef>
+		<defName>Kekelands_Kukold</defName>
+
+		<label>Куколд</label>
+
+		<description>Не рыба не мясо.</description>
+
+		<inheritable>false</inheritable>
+
+		<genes>
+		</genes>
+
+	</XenotypeDef>
+
+</Defs>

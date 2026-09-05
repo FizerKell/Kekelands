@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- Белая кожа олдов -->
+	<GeneDef>
+		<defName>Kekelands_Skin_Old</defName>
+
+		<label>кожа олда</label>
+		<labelShortAdj>олд</labelShortAdj>
+
+		<description>Характерный цвет кожи олдов.</description>
+
+		<iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+
+		<skinColorOverride>(0.90, 0.82, 0.75)</skinColorOverride>
+
+		<randomBrightnessFactor>0.05</randomBrightnessFactor>
+
+		<selectionWeight>0</selectionWeight>
+
+		<exclusionTags>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+	</GeneDef>
+
+
+	<!-- Тёмная кожа мигрантов -->
+	<GeneDef>
+		<defName>Kekelands_Skin_Migrant</defName>
+
+		<label>кожа мигранта</label>
+		<labelShortAdj>мигрант</labelShortAdj>
+
+		<description>Характерный цвет кожи мигрантов.</description>
+
+		<iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+
+		<skinColorOverride>(0.20, 0.13, 0.09)</skinColorOverride>
+
+		<randomBrightnessFactor>0.05</randomBrightnessFactor>
+
+		<selectionWeight>0</selectionWeight>
+
+		<exclusionTags>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+	</GeneDef>
+
+</Defs>

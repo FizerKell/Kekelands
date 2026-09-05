@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<XenotypeDef>
+		<defName>Kekelands_Migrant</defName>
+
+		<label>мигрант</label>
+
+		<description>Представитель мигрантов Кекелендса.</description>
+
+		<inheritable>false</inheritable>
+
+		<genes>
+			<li>Kekelands_Skin_Migrant</li>
+
+			<li>Beauty_VeryUgly</li>
+		</genes>
+
+	</XenotypeDef>
+
+</Defs>

@@ -70,6 +70,7 @@ namespace AzamPrime
             pawn.ageTracker.AgeBiologicalTicks = 18L * 3600000L;
             pawn.ageTracker.AgeChronologicalTicks = 18L * 3600000L;
 
+            SetInfinXenotype(pawn);
             SetInfinAdulthood(pawn);
 
             pawn.story.traits.allTraits.Clear();
@@ -243,6 +244,23 @@ namespace AzamPrime
             }
 
             pawn.story.Adulthood = adulthood;
+        }
+
+        private void SetInfinXenotype(Pawn pawn)
+        {
+            XenotypeDef xenotype =
+                DefDatabase<XenotypeDef>.GetNamedSilentFail("Kekelands_Old");
+
+            if (xenotype == null)
+            {
+                Log.Error(
+                    "[AzamPrime] Не найден ксенотип Инфина: Kekelands_Old"
+                );
+
+                return;
+            }
+
+            pawn.genes.SetXenotype(xenotype);
         }
     }
 }
