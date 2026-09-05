@@ -11,6 +11,8 @@
 
 		<inheritable>false</inheritable>
 
+		<iconPath>UI/Xenotypes/Kukold</iconPath>
+
 		<genes>
 		</genes>
 

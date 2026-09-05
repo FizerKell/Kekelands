@@ -17,6 +17,8 @@
 			<li>Beauty_VeryUgly</li>
 		</genes>
 
+		<iconPath>UI/Xenotypes/Migrant</iconPath>
+
 	</XenotypeDef>
 
 </Defs>
