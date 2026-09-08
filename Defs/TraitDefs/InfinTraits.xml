@@ -45,21 +45,4 @@
         </degreeDatas>
     </TraitDef>
 
-    <!-- Личная черта Инфина -->
-    <TraitDef>
-        <defName>Kekelands_StrongImmunity</defName>
-        <commonality>0</commonality>
-
-        <degreeDatas>
-            <li>
-                <label>сильный иммунитет</label>
-                <description>Организм NAME вырабатывает иммунитет к болезням быстрее обычного.</description>
-
-                <statFactors>
-                    <ImmunityGainSpeed>1.10</ImmunityGainSpeed>
-                </statFactors>
-            </li>
-        </degreeDatas>
-    </TraitDef>
-
 </Defs>
