@@ -2,57 +2,64 @@
 
 <Defs>
 
-	<!-- Цундере -->
-	<TraitDef>
-		<defName>Kekelands_Tsundere</defName>
-		<commonality>0.12</commonality>
+    <!-- Цундере: механика -1 мнения всем пешкам реализована в C# -->
+    <TraitDef>
+        <defName>Kekelands_Tsundere</defName>
+        <commonality>0.12</commonality>
 
-		<degreeDatas>
-			<li>
-				<label>цундере</label>
-				<description>Старательно делает вид, что ему на всех плевать. Почему тогда он всё ещё здесь — вопрос открытый.</description>
+        <degreeDatas>
+            <li>
+                <label>цундере</label>
+                <description>Старательно делает вид, что ему на всех плевать. Почему тогда он всё ещё здесь — вопрос открытый.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
 
-				<statOffsets>
-					<SocialImpact>-0.10</SocialImpact>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-	</TraitDef>
+    <!-- Нытик: +20 процентных пунктов к порогу психического срыва -->
+    <TraitDef>
+        <defName>Kekelands_Whiner</defName>
+        <commonality>0.20</commonality>
 
+        <degreeDatas>
+            <li>
+                <label>нытик</label>
+                <description>Найдёт повод пожаловаться даже тогда, когда всё идёт хорошо.</description>
 
-	<!-- Нытик -->
-	<TraitDef>
-		<defName>Kekelands_Whiner</defName>
-		<commonality>0.20</commonality>
+                <statOffsets>
+                    <MentalBreakThreshold>0.20</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </degreeDatas>
+    </TraitDef>
 
-		<degreeDatas>
-			<li>
-				<label>нытик</label>
-				<description>Найдёт повод пожаловаться даже тогда, когда всё идёт хорошо.</description>
+    <!-- Агрессия: случайные социальные драки реализованы в C# -->
+    <TraitDef>
+        <defName>Kekelands_Aggressive</defName>
+        <commonality>0.15</commonality>
 
-				<statOffsets>
-					<MentalBreakThreshold>0.05</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-	</TraitDef>
+        <degreeDatas>
+            <li>
+                <label>агрессия</label>
+                <description>Сначала злится. Потом думает. Иногда до второго этапа дело не доходит.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
 
+    <!-- Личная черта Инфина -->
+    <TraitDef>
+        <defName>Kekelands_StrongImmunity</defName>
+        <commonality>0</commonality>
 
-	<!-- Агрессия -->
-	<TraitDef>
-		<defName>Kekelands_Aggressive</defName>
-		<commonality>0.15</commonality>
+        <degreeDatas>
+            <li>
+                <label>сильный иммунитет</label>
+                <description>Организм NAME вырабатывает иммунитет к болезням быстрее обычного.</description>
 
-		<degreeDatas>
-			<li>
-				<label>агрессия</label>
-				<description>Сначала злится. Потом думает. Иногда до второго этапа дело не доходит.</description>
-
-				<statOffsets>
-					<MeleeHitChance>0.05</MeleeHitChance>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-	</TraitDef>
+                <statFactors>
+                    <ImmunityGainSpeed>1.10</ImmunityGainSpeed>
+                </statFactors>
+            </li>
+        </degreeDatas>
+    </TraitDef>
 
 </Defs>
