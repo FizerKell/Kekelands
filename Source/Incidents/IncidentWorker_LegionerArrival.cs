@@ -119,9 +119,11 @@ namespace AzamPrime
             // Нервозность.
             AddTrait(pawn, "Neurotic", 1);
 
-            // Две отдельные черты, которых нет смысла привязывать к неоднозначным ванильным аналогам.
-            AddTrait(pawn, "Kekelands_LegionerSnob", 0);
-            AddTrait(pawn, "Kekelands_MisunderstoodArtist", 0);
+            // Ванильный снобизм (Greedy в defName).
+            AddTrait(pawn, "Greedy", 0);
+
+            // Ванильный непонятый творец.
+            AddTrait(pawn, "TorturedArtist", 0);
         }
 
         private void AddTrait(Pawn pawn, string defName, int degree)
