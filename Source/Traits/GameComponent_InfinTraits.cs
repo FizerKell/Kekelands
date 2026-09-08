@@ -37,7 +37,7 @@ namespace AzamPrime
 
             foreach (Map map in Find.Maps)
             {
-                List<Pawn> pawns = map.mapPawns.AllPawnsSpawned;
+                IReadOnlyList<Pawn> pawns = map.mapPawns.AllPawnsSpawned;
 
                 for (int i = 0; i < pawns.Count; i++)
                 {
@@ -68,7 +68,7 @@ namespace AzamPrime
 
         private void ApplyTsundereOpinionLoss(
             Pawn infin,
-            List<Pawn> pawns,
+            IReadOnlyList<Pawn> pawns,
             ThoughtDef thoughtDef)
         {
             if (thoughtDef == null)
@@ -96,7 +96,7 @@ namespace AzamPrime
 
         private void TryStartRandomFight(
             Pawn infin,
-            List<Pawn> pawns)
+            IReadOnlyList<Pawn> pawns)
         {
             if (infin.interactions == null ||
                 infin.Dead ||
