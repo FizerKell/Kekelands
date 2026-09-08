@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TraitDef>
+        <defName>Kekelands_LegionerSnob</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>снобизм</label>
+                <description>NAME считает свои вкусы и стандарты заметно выше окружающих.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>Kekelands_MisunderstoodArtist</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>непонятый творец</label>
+                <description>NAME уверен, что окружающие просто не способны оценить его творческое видение.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+</Defs>
