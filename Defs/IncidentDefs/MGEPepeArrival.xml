@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <IncidentDef>
+        <defName>MGEPepeArrival</defName>
+        <label>прибытие МГЕ Пепе</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>AzamPrime.IncidentWorker_MGEPepeArrival</workerClass>
+        <baseChance>0</baseChance>
+    </IncidentDef>
+</Defs>
