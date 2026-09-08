@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Kekelands_InfinTsundereOpinion</defName>
+        <thoughtClass>Thought_MemorySocial</thoughtClass>
+        <durationDays>9999</durationDays>
+        <stackLimit>100</stackLimit>
+        <stages>
+            <li>
+                <label>Инфин опять ведёт себя как цундере</label>
+                <baseOpinionOffset>-1</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
