@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <IncidentDef>
+        <defName>LegionerArrival</defName>
+        <label>прибытие Легионера</label>
+
+        <category>Misc</category>
+
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+
+        <workerClass>AzamPrime.IncidentWorker_LegionerArrival</workerClass>
+        <baseChance>0</baseChance>
+    </IncidentDef>
+</Defs>
