@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <PawnKindDef>
+        <defName>MGEPepe</defName>
+        <label>МГЕ Пепе</label>
+        <race>Human</race>
+        <combatPower>90</combatPower>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+
+        <initialResistanceRange>
+            <min>0</min>
+            <max>0</max>
+        </initialResistanceRange>
+
+        <initialWillRange>
+            <min>0</min>
+            <max>0</max>
+        </initialWillRange>
+
+        <weaponTags>
+            <li>Melee</li>
+        </weaponTags>
+    </PawnKindDef>
+</Defs>
