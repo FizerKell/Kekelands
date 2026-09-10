@@ -103,7 +103,7 @@ namespace AzamPrime
             GiveApparel(
                 pawn,
                 "Apparel_BasicShirt",
-                ThingDefOf.Hyperweave
+                DefDatabase<ThingDef>.GetNamed("Hyperweave")
             );
 
             // Плащ.

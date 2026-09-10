@@ -90,7 +90,7 @@ namespace AzamPrime
             GiveApparel(
                 pawn,
                 "Apparel_BasicShirt",
-                ThingDefOf.Hyperweave
+                DefDatabase<ThingDef>.GetNamed("Hyperweave")
             );
 
             GiveApparel(
@@ -399,8 +399,9 @@ namespace AzamPrime
         // -------------------------
 
         private void GiveWeapon(
-            Pawn pawn,
-            string defName)
+            pawn,
+            "Gun_MachinePistol"
+        );
         {
             ThingDef weaponDef =
                 DefDatabase<ThingDef>.GetNamedSilentFail(
