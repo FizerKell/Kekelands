@@ -101,7 +101,7 @@ namespace AzamPrime
 
             GiveWeapon(
                 pawn,
-                "Gun_SMG"
+                "Gun_MachinePistol"
             );
 
             ClearGeneratedInventory(pawn);
@@ -399,9 +399,8 @@ namespace AzamPrime
         // -------------------------
 
         private void GiveWeapon(
-            pawn,
-            "Gun_MachinePistol"
-        )
+            Pawn pawn,
+            string defName)
         {
             ThingDef weaponDef =
                 DefDatabase<ThingDef>.GetNamedSilentFail(
