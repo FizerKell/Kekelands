@@ -401,7 +401,7 @@ namespace AzamPrime
         private void GiveWeapon(
             pawn,
             "Gun_MachinePistol"
-        );
+        )
         {
             ThingDef weaponDef =
                 DefDatabase<ThingDef>.GetNamedSilentFail(
