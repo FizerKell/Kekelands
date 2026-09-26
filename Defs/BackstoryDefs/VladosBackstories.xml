@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_VladosChildhood</defName>
+
+		<title>Мечтатель</title>
+		<titleShort>Мечтатель</titleShort>
+
+		<baseDesc>
+			[PAWN_nameDef] рос экспрессивным ребёнком. Он хорошо пел и легко заводил себе друзей любого пола и возраста.
+
+			[PAWN_nameDef] ненавидел драки, но любой, у кого получалось его разозлить, очень скоро об этом жалел. Нрав у него весьма вспыльчив.
+		</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_VladosAdulthood</defName>
+
+		<title>Строитель</title>
+		<titleShort>Строитель</titleShort>
+
+		<baseDesc>[PAWN_nameDef] отвечал за возведение жилых сооружений для своего племени, в том числе временных жилищ для путешествий и постоянных — для поселений. Одной из важных задач в этой работе был сбор и использование местных растений в качестве строительных материалов.</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

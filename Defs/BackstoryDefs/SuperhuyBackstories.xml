@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_SuperhuyChildhood</defName>
+
+		<title>Избалованный принц</title>
+		<titleShort>Избалованный принц</titleShort>
+
+		<baseDesc>
+			Родители [PAWN_nameDef] не хотели себе ещё одного наследника. Опасаясь борьбы за престол в будущем, они решили «обезвредить» [PAWN_nameDef] в раннем возрасте.
+
+			С самого рождения родители баловали его, не давая развивать тягу к знаниям, которая могла бы стать угрозой их другому, любимому сыну. [PAWN_nameDef] научился разве что заставлять придворных приносить ему побольше еды.
+		</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_SuperhuyAdulthood</defName>
+
+		<title>Негодяй</title>
+		<titleShort>Негодяй</titleShort>
+
+		<baseDesc>Поднявшись на вершину своей преступной банды, [PAWN_nameDef] начал учиться искусству преступлений: от владения огнестрельным оружием до разработки новых технологий вооружения. А ещё он преуспевал в том, чтобы подчинять других своей воле.</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

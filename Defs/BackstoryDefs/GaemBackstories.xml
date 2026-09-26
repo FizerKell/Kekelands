@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_GaemChildhood</defName>
+
+		<title>Выращенный раб</title>
+		<titleShort>Выращенный раб</titleShort>
+
+		<baseDesc>[PAWN_nameDef] был искусственно выращен рабом в подпольной лаборатории городского мира. Ребёнком его учили только готовить, убирать и обслуживать своих хозяев. Большую часть своего детства он не знал ничего другого.</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_GaemAdulthood</defName>
+
+		<title>Странствующий лекарь</title>
+		<titleShort>Странствующий лекарь</titleShort>
+
+		<baseDesc>
+			[PAWN_nameDef] учился на врача, но ему не хватало практики в своём мирном среднем мире.
+
+			Он решил покинуть насиженные места и отправиться в приграничные миры, где люди больше всего нуждаются в его заботе.
+		</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

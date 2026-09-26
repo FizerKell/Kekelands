@@ -78,6 +78,8 @@ namespace AzamPrime
             pawn.ageTracker.AgeChronologicalTicks =
                 19L * 3600000L;
 
+            SetBackstories(pawn);
+
             SetXenotype(pawn);
             SetTraits(pawn);
             SetSkillsAndPassions(pawn);
@@ -575,6 +577,29 @@ namespace AzamPrime
                 def,
                 count
             );
+        }
+
+        private void SetBackstories(Pawn pawn)
+        {
+            BackstoryDef childhood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_SuperhuyChildhood"
+                );
+
+            BackstoryDef adulthood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_SuperhuyAdulthood"
+                );
+
+            if (childhood != null)
+                pawn.story.Childhood = childhood;
+            else
+                Log.Error("[AzamPrime] Не найдена детская биография Суперхуя.");
+
+            if (adulthood != null)
+                pawn.story.Adulthood = adulthood;
+            else
+                Log.Error("[AzamPrime] Не найдена взрослая биография Суперхуя.");
         }
     }
 }

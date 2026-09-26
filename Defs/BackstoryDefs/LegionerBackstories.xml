@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_LegionerChildhood</defName>
+
+		<title>Студент академии</title>
+		<titleShort>Студент академии</titleShort>
+
+		<baseDesc>
+			[PAWN_nameDef] поступил в космическую академию, как сделал бы любой кадет. Там его выделялся высоким ростом и привлекательной внешностью.
+
+			Хотя его больше заботила прическа, чем оценки, ему всё же каким-то образом удалось сдать выпускные экзамены.
+		</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_LegionerAdulthood</defName>
+
+		<title>Космодесантник</title>
+		<titleShort>Космодесантник</titleShort>
+
+		<baseDesc>[PAWN_nameDef] был бойцом военно-космических сил Империи. В его обязанности входили абордаж, уничтожение экипажа и захват вражеских кораблей с минимумом наносимых повреждений. И у него это отлично получалось.</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

@@ -84,6 +84,8 @@ namespace AzamPrime
             pawn.ageTracker.AgeChronologicalTicks =
                 15L * 3600000L;
 
+            SetBackstories(pawn);
+
             SetXenotype(pawn);
             SetTraits(pawn);
             SetSkillsAndPassions(pawn);
@@ -581,6 +583,29 @@ namespace AzamPrime
                 horseCell,
                 map
             );
+        }
+
+        private void SetBackstories(Pawn pawn)
+        {
+            BackstoryDef childhood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_VergilyushaChildhood"
+                );
+
+            BackstoryDef adulthood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_VergilyushaAdulthood"
+                );
+
+            if (childhood != null)
+                pawn.story.Childhood = childhood;
+            else
+                Log.Error("[AzamPrime] Не найдена детская биография Вергилюши.");
+
+            if (adulthood != null)
+                pawn.story.Adulthood = adulthood;
+            else
+                Log.Error("[AzamPrime] Не найдена взрослая биография Вергилюши.");
         }
     }
 }

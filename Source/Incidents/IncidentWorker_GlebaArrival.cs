@@ -71,6 +71,8 @@ namespace AzamPrime
             pawn.ageTracker.AgeChronologicalTicks =
                 16L * 3600000L;
 
+            SetBackstories(pawn);
+
             SetXenotype(pawn);
             SetBody(pawn);
             SetTraits(pawn);
@@ -480,6 +482,29 @@ namespace AzamPrime
 
             pawn.inventory.innerContainer
                 .TryAdd(thing);
+        }
+
+        private void SetBackstories(Pawn pawn)
+        {
+            BackstoryDef childhood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_GlebaChildhood"
+                );
+
+            BackstoryDef adulthood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_GlebaAdulthood"
+                );
+
+            if (childhood != null)
+                pawn.story.Childhood = childhood;
+            else
+                Log.Error("[AzamPrime] Не найдена детская биография Глебы.");
+
+            if (adulthood != null)
+                pawn.story.Adulthood = adulthood;
+            else
+                Log.Error("[AzamPrime] Не найдена взрослая биография Глебы.");
         }
     }
 }

@@ -57,6 +57,7 @@ namespace AzamPrime
             pawn.ageTracker.AgeBiologicalTicks = 19L * 3600000L;
             pawn.ageTracker.AgeChronologicalTicks = 19L * 3600000L;
 
+            SetBackstories(pawn);
             SetXenotype(pawn);
             SetBodyType(pawn);
             SetTraits(pawn);
@@ -215,6 +216,29 @@ namespace AzamPrime
             Thing thing = ThingMaker.MakeThing(def);
             thing.stackCount = count;
             pawn.inventory.innerContainer.TryAdd(thing);
+        }
+
+        private void SetBackstories(Pawn pawn)
+        {
+            BackstoryDef childhood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_LegionerChildhood"
+                );
+
+            BackstoryDef adulthood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_LegionerAdulthood"
+                );
+
+            if (childhood != null)
+                pawn.story.Childhood = childhood;
+            else
+                Log.Error("[AzamPrime] Не найдена детская биография Легионера.");
+
+            if (adulthood != null)
+                pawn.story.Adulthood = adulthood;
+            else
+                Log.Error("[AzamPrime] Не найдена взрослая биография Легионера.");
         }
     }
 }

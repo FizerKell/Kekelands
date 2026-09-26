@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_GlebaChildhood</defName>
+
+		<title>Геймер</title>
+		<titleShort>Геймер</titleShort>
+
+		<baseDesc>[PAWN_nameDef] рос в утопическом мире и получал всё что хотел. В школе он много общался с друзьями, а дома проводил время за любимыми играми и изучением новых гаджетов.</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_GlebaAdulthood</defName>
+
+		<title>Белый хакер</title>
+		<titleShort>Белый хакер</titleShort>
+
+		<baseDesc>С помощью своего компьютера [PAWN_nameDef] помогал избавлять сетевой мир от плохих людей.</baseDesc>
+
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

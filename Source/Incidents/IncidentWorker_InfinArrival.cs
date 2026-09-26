@@ -65,7 +65,7 @@ namespace AzamPrime
             pawn.ageTracker.AgeChronologicalTicks = 18L * 3600000L;
 
             SetInfinXenotype(pawn);
-            SetInfinAdulthood(pawn);
+            SetInfinBackstories(pawn);
             SetInfinTraits(pawn);
             SetInfinSkills(pawn);
             SetInfinHair(pawn);
@@ -255,22 +255,39 @@ namespace AzamPrime
             pawn.story.hairDef = hair;
         }
 
-        private void SetInfinAdulthood(Pawn pawn)
+        private void SetInfinBackstories(Pawn pawn)
         {
+            BackstoryDef childhood =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                    "Kekelands_InfinChildhood"
+                );
+
             BackstoryDef adulthood =
                 DefDatabase<BackstoryDef>.GetNamedSilentFail(
                     "Kekelands_InfinAdulthood"
                 );
+
+            if (childhood == null)
+            {
+                Log.Error(
+                    "[AzamPrime] Не найдена детская биография Инфина: Kekelands_InfinChildhood"
+                );
+            }
+            else
+            {
+                pawn.story.Childhood = childhood;
+            }
 
             if (adulthood == null)
             {
                 Log.Error(
                     "[AzamPrime] Не найдена взрослая биография Инфина: Kekelands_InfinAdulthood"
                 );
-                return;
             }
-
-            pawn.story.Adulthood = adulthood;
+            else
+            {
+                pawn.story.Adulthood = adulthood;
+            }
         }
 
         private void SetInfinXenotype(Pawn pawn)

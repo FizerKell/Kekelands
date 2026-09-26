@@ -3,19 +3,31 @@
 <Defs>
 
 	<BackstoryDef>
-		<defName>Kekelands_InfinAdulthood</defName>
+		<defName>Kekelands_InfinChildhood</defName>
 
 		<title>Мальчик с фермы</title>
 		<titleShort>Мальчик с фермы</titleShort>
 
-		<baseDesc>[PAWN_namedef] рос на семейной ферме по производству говядины. Ему нравилось работать в поле и ухаживать за животными.</baseDesc>
+		<baseDesc>[PAWN_nameDef] рос на семейной ферме по производству говядины. Ему нравилось работать в поле и ухаживать за животными.</baseDesc>
+
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+
+	<BackstoryDef>
+		<defName>Kekelands_InfinAdulthood</defName>
+
+		<title>Военный врач</title>
+		<titleShort>Военный врач</titleShort>
+
+		<baseDesc>[PAWN_nameDef] лечил своих раненых в бою товарищей.</baseDesc>
 
 		<slot>Adulthood</slot>
 
-		<skillGains>
-			<Social>4</Social>
-			<Intellectual>2</Intellectual>
-		</skillGains>
 		<spawnCategories>
 			<li>Civil</li>
 		</spawnCategories>
