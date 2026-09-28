@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_AlbatrosChildhood</defName>
+		<title>Игрок-профи</title>
+		<titleShort>Игрок-профи</titleShort>
+		<baseDesc>[PAWN_nameDef] был погружён в мир видеоигр с тех пор, как его руки могли держать джойстик.\n\nОн занял места в серединах таблиц на нескольких местных турнирах 16-битной эры. Потому никто не обратил внимания на то, что, став подростком, [PAWN_nameDef] покинул киберспорт.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_AlbatrosAdulthood</defName>
+		<title>Ядерный физик</title>
+		<titleShort>Ядерный физик</titleShort>
+		<baseDesc>[PAWN_nameDef] проводил передовые исследования в области физики, стараясь по мере сил приблизить мирное и светлое будущее.</baseDesc>
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

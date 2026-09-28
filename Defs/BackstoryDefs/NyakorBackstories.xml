@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_NyakorChildhood</defName>
+		<title>Одарённый студент</title>
+		<titleShort>Одарённый студент</titleShort>
+		<baseDesc>Будучи прилежным студентом, [PAWN_nameDef] целенаправленно изучал всё и вся про человечество и его творения.\n\nЕго не слишком волновало, что его считали заучкой. [PAWN_nameDef] надеялся на светлое будущее.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_NyakorAdulthood</defName>
+		<title>Авантюрист</title>
+		<titleShort>Авантюрист</titleShort>
+		<baseDesc>Утоляя свою жажду приключений, новизны и вдохновения, [PAWN_nameDef] посещает многие планеты. От ярких утопических миров до тусклых токсичных шариков, истерзанных войной.\n\n[PAWN_nameDef] почти не работает. В поисках лёгких денег он едва не преступает этические грани. Среди всех занятий он больше всего ненавидит готовить.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_OtchimChildhood</defName>
+		<title>Сирота из раблагеря</title>
+		<titleShort>Сирота из раблагеря</titleShort>
+		<baseDesc>[PAWN_nameDef] рано потерял родителей из-за аварии на производстве и рос в трудовом лагере для сирот. Надсмотрщики лагеря не жалели своих подопечных, но всё же дети были одеты и накормлены.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_OtchimAdulthood</defName>
+		<title>Работник карьера</title>
+		<titleShort>Работник карьера</titleShort>
+		<baseDesc>[PAWN_nameDef] работал в каменоломне, помогая добывать ценный камень на склоне холма. Он научился чувствовать в горной породе перспективы и опасности при помощи одних лишь взгляда, прикосновения и интуиции.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

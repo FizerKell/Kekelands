@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_SaphirChildhood</defName>
+		<title>Богатый мальчик</title>
+		<titleShort>Богатый мальчик</titleShort>
+		<baseDesc>[PAWN_nameDef] рос в среднем мире, у него были любящие родители, милый питомец и много денег, но не было друзей.\n\nЕго отец всегда говорил: «Эти крестьяне хотят лишь твоих денег», так что [PAWN_nameDef] проводил время либо в одиночестве, либо в драках с другими детьми.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_SaphirAdulthood</defName>
+		<title>Шпион</title>
+		<titleShort>Шпион</titleShort>
+		<baseDesc>[PAWN_nameDef] проходил обучение внедрению и шпионажу в государственной программе. Он научился сохранять самообладание и выкручиваться из трудных ситуаций. Когда уговоры не срабатывали, он переходил к более грубым методам.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

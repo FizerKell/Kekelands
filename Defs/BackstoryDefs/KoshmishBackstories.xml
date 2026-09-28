@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_KoshmishChildhood</defName>
+		<title>Избалованный ребёнок</title>
+		<titleShort>Избалованный ребёнок</titleShort>
+		<baseDesc>[PAWN_nameDef] родился в богатой семье, и ему давали всё, что он попросит. Из-за этого он так и не выработал серьёзное отношение к работе и независимый характер.\n\nОжидалось, что он станет одним из лучших стоматологов своего мира.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_KoshmishAdulthood</defName>
+		<title>Благотворитель</title>
+		<titleShort>Благотворитель</titleShort>
+		<baseDesc>Утопические миры — это рай безопасности и комфорта для тех, кому повезло там жить. Однако [PAWN_nameDef] не мог игнорировать соседние планеты-свалки, где люди жили в нужде и голоде. Он старался помочь им, собирая пожертвования и поддерживая нуждающихся.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

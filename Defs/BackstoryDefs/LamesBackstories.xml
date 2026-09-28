@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_LamesChildhood</defName>
+		<title>Популярный блогер</title>
+		<titleShort>Популярный блогер</titleShort>
+		<baseDesc>С ранних лет [PAWN_nameDef] проявлял талант к писательству. Став чуть старше, он анонимно, чтобы скрыть свой возраст, вёл популярный блог на самые разные темы: От биоэтики до геополитики и ксеносоциологии.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_LamesAdulthood</defName>
+		<title>Исследователь</title>
+		<titleShort>Исследователь</titleShort>
+		<baseDesc>[PAWN_nameDef] путешествовал между планетами, собирая образцы, сказания и данные научных исследований. Он надеялся однажды собрать данные обо всех животных, растениях, минералах, машинах и устройствах известного космоса и составить «Полный путеводитель по окраинным мирам».</baseDesc>
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

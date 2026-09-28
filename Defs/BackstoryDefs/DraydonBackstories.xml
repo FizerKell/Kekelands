@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_DraydonChildhood</defName>
+		<title>Карточный шулер</title>
+		<titleShort>Карточный шулер</titleShort>
+		<baseDesc>Единственным полезным навыком, которым [PAWN_nameDef] овладел к окончанию военного училища, была подтасовка карт. Мухлюя в казино, он нажил себе немало врагов. По мере роста угрозы возмездия [PAWN_nameDef] становился лишь резче и наглее.\n\nВ конце концов его поймали и подвергли пыткам, которые оставили ему ожоги по всему телу. С тех пор [PAWN_nameDef] больше не хочет связываться ни с огнём, ни с насилием.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_DraydonAdulthood</defName>
+		<title>Мятежник-луддит</title>
+		<titleShort>Мятежник-луддит</titleShort>
+		<baseDesc>В то время как большинство людей его мира избрали своим путём отказаться от своей социальной и биологической индивидуальности, чтобы слиться в единой информационной сущности, [PAWN_nameDef] присоединился к группе мятежников, решившей отказаться от использования технологий.</baseDesc>
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_BiriksChildhood</defName>
+		<title>Выживший в резне</title>
+		<titleShort>Выживший в резне</titleShort>
+		<baseDesc>Семейную ферму, на которой рос [PAWN_nameDef], атаковали мародёры, круша всё на своём пути, убивая и фермеров, и их скот.\n\nВсе, кого [PAWN_nameDef] знал, погибли, а его бросили среди развалин на произвол судьбы.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_BiriksAdulthood</defName>
+		<title>Егерь</title>
+		<titleShort>Егерь</titleShort>
+		<baseDesc>[PAWN_nameDef] выслеживал животных и людей для самых разнообразных клиентов. Он приобрёл навыки чтения следов, поиска пищи в дикой природе и преследования добычи.</baseDesc>
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

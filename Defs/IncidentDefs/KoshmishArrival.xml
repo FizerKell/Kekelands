@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<IncidentDef>
+		<defName>KoshmishArrival</defName>
+		<label>прибытие Кощмища</label>
+
+		<category>Misc</category>
+
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+
+		<workerClass>AzamPrime.IncidentWorker_KoshmishArrival</workerClass>
+
+		<baseChance>0</baseChance>
+	</IncidentDef>
+</Defs>

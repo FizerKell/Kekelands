@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<PawnKindDef>
+		<defName>ArgentinskiyDomosed</defName>
+		<label>Аргентинский домосед</label>
+
+		<race>Human</race>
+		<combatPower>100</combatPower>
+
+		<defaultFactionType>PlayerColony</defaultFactionType>
+
+		<initialResistanceRange>
+			<min>0</min>
+			<max>0</max>
+		</initialResistanceRange>
+
+		<initialWillRange>
+			<min>0</min>
+			<max>0</max>
+		</initialWillRange>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <BackstoryDef>
+        <defName>Kekelands_NecropolitChildhood</defName>
+        <title>Беженец</title>
+        <titleShort>Беженец</titleShort>
+        <baseDesc>После того как война пришла в его родной дом, [PAWN_nameDef] и его родители бежали, пытаясь хоть где-нибудь найти безопасное убежище. Его самые первые воспоминания — уроки самозащиты.\n\nНасилие и разрушения, свидетелем которых становился [PAWN_nameDef], навсегда оставили глубокий след в его памяти.</baseDesc>
+        <slot>Childhood</slot>
+
+        <spawnCategories>
+            <li>Civil</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>Kekelands_NecropolitAdulthood</defName>
+        <title>Слесарь</title>
+        <titleShort>Слесарь</titleShort>
+        <baseDesc>[PAWN_nameDef] становится знаменитым мастером по производству инструмента в приграничном мире.\n\nПосле того как его фирма со скандалом закрывается, он присоединяется к племени, чтобы выжить, делает отличные ножи и молотки, путешествует и продаёт свои изделия в разных поселениях.</baseDesc>
+        <slot>Adulthood</slot>
+
+        <spawnCategories>
+            <li>Civil</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+</Defs>

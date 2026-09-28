@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_ArgentinskiyDomosedChildhood</defName>
+		<title>Собиратель костей</title>
+		<titleShort>Собиратель костей</titleShort>
+		<baseDesc>[PAWN_nameDef] родился в семье охотников за сокровищами и с детства увлёкся древней историей.\n\n[PAWN_nameDef] не был ни задиристым, ни общительным ребёнком, а больше предпочитал копаться в книгах по истории и в земле.</baseDesc>
+		<slot>Childhood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_ArgentinskiyDomosedAdulthood</defName>
+		<title>Посланник звёзд</title>
+		<titleShort>Посланник звёзд</titleShort>
+		<baseDesc>[PAWN_nameDef] вступил в дипломатический корпус. Честь и традиции стали теми принципами, от которых он не отступал ни в одной миссии.\n\nВысокая должность постепенно отдалила его от ручного труда, позволяя сосредоточиться на своём ораторском мастерстве. Прочие виды мастерства [PAWN_nameDef] оставил другим.</baseDesc>
+		<slot>Adulthood</slot>
+
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>
