@@ -5,7 +5,7 @@
 	<PawnKindDef>
 		<defName>Kekelands_Temz</defName>
 		<label>Темз</label>
-		<race>Kekelands_Migrant</race>
+		<race>Human</race>
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 

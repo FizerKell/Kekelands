@@ -17,7 +17,8 @@ namespace AzamPrime
                 faction: Faction.OfPlayer,
                 context: PawnGenerationContext.NonPlayer,
                 forceGenerateNewPawn: true,
-                fixedGender: Gender.Male
+                fixedGender: Gender.Male,
+                forcedXenotype: DefDatabase<XenotypeDef>.GetNamed("Kekelands_Migrant")
             );
 
             Pawn pawn = PawnGenerator.GeneratePawn(request);

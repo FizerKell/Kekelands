@@ -5,7 +5,7 @@
 	<PawnKindDef>
 		<defName>Kekelands_DedNaPovodke</defName>
 		<label>Дед на поводке</label>
-		<race>Kekelands_Cuckold</race>
+		<race>Human</race>
 		<combatPower>50</combatPower>
 	</PawnKindDef>
 

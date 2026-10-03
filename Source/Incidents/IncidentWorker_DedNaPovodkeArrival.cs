@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using RimWorld;
 using Verse;
 
@@ -19,7 +17,8 @@ namespace AzamPrime
                 faction: Faction.OfPlayer,
                 context: PawnGenerationContext.NonPlayer,
                 forceGenerateNewPawn: true,
-                fixedGender: Gender.Male
+                fixedGender: Gender.Male,
+                forcedXenotype: DefDatabase<XenotypeDef>.GetNamed("Kekelands_Cuckold")
             );
 
             Pawn pawn = PawnGenerator.GeneratePawn(request);
@@ -42,16 +41,12 @@ namespace AzamPrime
             // БИОГРАФИИ
             // -------------------------------------------------
 
-            // Ищем ванильные биографии по отображаемому названию.
-            BackstoryDef childhood = DefDatabase<BackstoryDef>.AllDefsListForReading
-                .FirstOrDefault(x =>
-                    x.title != null &&
-                    x.title.Equals("дитя лесов", StringComparison.OrdinalIgnoreCase));
+            // Назначаем заданные биографии по стабильным defName.
+            BackstoryDef childhood = DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                "Kekelands_DedNaPovodkeChildhood");
 
-            BackstoryDef adulthood = DefDatabase<BackstoryDef>.AllDefsListForReading
-                .FirstOrDefault(x =>
-                    x.title != null &&
-                    x.title.Equals("житель поселения", StringComparison.OrdinalIgnoreCase));
+            BackstoryDef adulthood = DefDatabase<BackstoryDef>.GetNamedSilentFail(
+                "Kekelands_DedNaPovodkeAdulthood");
 
             if (childhood != null)
                 pawn.story.Childhood = childhood;

@@ -10,6 +10,9 @@
 		<titleShort>Мечтатель</titleShort>
 
 		<baseDesc>[PAWN_nameDef] рос экспрессивным ребёнком. Он хорошо пел и легко заводил себе друзей любого пола в возрасте.</baseDesc>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
 	</BackstoryDef>
 
 	<BackstoryDef>
@@ -20,6 +23,9 @@
 		<titleShort>Исследователь ИИ</titleShort>
 
 		<baseDesc>[PAWN_nameDef] стал известным исследователем в области искусственного интеллекта, робототехники и интерактивной голографии. Его дружба с искусственным интеллектом собственной разработки придала ему уверенности, и он вскоре начал превращать в общение с реальными людьми.</baseDesc>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
 	</BackstoryDef>
 
 </Defs>

@@ -14,6 +14,9 @@
 		<workDisables>
 			<li>Intellectual</li>
 		</workDisables>
+		<spawnCategories>
+			<li>Civil</li>
+		</spawnCategories>
 	</BackstoryDef>
 
 </Defs>
