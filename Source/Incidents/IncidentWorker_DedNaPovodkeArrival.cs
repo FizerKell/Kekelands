@@ -15,31 +15,11 @@ namespace AzamPrime
                 DefDatabase<PawnKindDef>.GetNamed("Kekelands_DedNaPovodke");
 
             PawnGenerationRequest request = new PawnGenerationRequest(
-                pawnKind,
-                Faction.OfPlayer,
-                PawnGenerationContext.NonPlayer,
-                -1,
-                true,
-                false,
-                false,
-                false,
-                true,
-                false,
-                1f,
-                false,
-                true,
-                true,
-                false,
-                false,
-                false,
-                false,
-                null,
-                null,
-                null,
-                null,
-                null,
-                Gender.Male,
-                null
+                kind: pawnKind,
+                faction: Faction.OfPlayer,
+                context: PawnGenerationContext.NonPlayer,
+                forceGenerateNewPawn: true,
+                fixedGender: Gender.Male
             );
 
             Pawn pawn = PawnGenerator.GeneratePawn(request);
@@ -63,12 +43,12 @@ namespace AzamPrime
             // -------------------------------------------------
 
             // Ищем ванильные биографии по отображаемому названию.
-            Backstory childhood = BackstoryDatabase.allBackstories.Values
+            BackstoryDef childhood = DefDatabase<BackstoryDef>.AllDefsListForReading
                 .FirstOrDefault(x =>
                     x.title != null &&
                     x.title.Equals("дитя лесов", StringComparison.OrdinalIgnoreCase));
 
-            Backstory adulthood = BackstoryDatabase.allBackstories.Values
+            BackstoryDef adulthood = DefDatabase<BackstoryDef>.AllDefsListForReading
                 .FirstOrDefault(x =>
                     x.title != null &&
                     x.title.Equals("житель поселения", StringComparison.OrdinalIgnoreCase));
@@ -128,7 +108,7 @@ namespace AzamPrime
             pawn.skills.GetSkill(SkillDefOf.Construction).Level = 7;
             pawn.skills.GetSkill(SkillDefOf.Mining).Level = 6;
             pawn.skills.GetSkill(SkillDefOf.Cooking).Level = 10;
-            pawn.skills.GetSkill(SkillDefOf.Growing).Level = 10;
+            pawn.skills.GetSkill(SkillDefOf.Plants).Level = 10;
             pawn.skills.GetSkill(SkillDefOf.Animals).Level = 5;
             pawn.skills.GetSkill(SkillDefOf.Crafting).Level = 18;
             pawn.skills.GetSkill(SkillDefOf.Artistic).Level = 5;
@@ -159,7 +139,7 @@ namespace AzamPrime
                 DefDatabase<HairDef>.GetNamedSilentFail("Shaved");
 
             if (hair != null)
-                pawn.story.HairDef = hair;
+                pawn.story.hairDef = hair;
 
             BeardDef beard =
                 DefDatabase<BeardDef>.GetNamedSilentFail("Short") ??

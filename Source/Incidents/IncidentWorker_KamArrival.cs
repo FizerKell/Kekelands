@@ -13,31 +13,11 @@ namespace AzamPrime
             PawnKindDef kamKind = DefDatabase<PawnKindDef>.GetNamed("Kekelands_Kam");
 
             PawnGenerationRequest request = new PawnGenerationRequest(
-                kamKind,
-                Faction.OfPlayer,
-                PawnGenerationContext.NonPlayer,
-                -1,
-                true,
-                false,
-                false,
-                false,
-                true,
-                false,
-                1f,
-                false,
-                true,
-                true,
-                false,
-                false,
-                false,
-                false,
-                null,
-                null,
-                null,
-                null,
-                null,
-                Gender.Male,
-                null
+                kind: kamKind,
+                faction: Faction.OfPlayer,
+                context: PawnGenerationContext.NonPlayer,
+                forceGenerateNewPawn: true,
+                fixedGender: Gender.Male
             );
 
             Pawn pawn = PawnGenerator.GeneratePawn(request);
@@ -53,8 +33,8 @@ namespace AzamPrime
             pawn.ageTracker.AgeChronologicalTicks = 25L * 3600000L;
 
             // Зрелость — специальная биография с отключённым умственным трудом
-            Backstory adultBackstory =
-                BackstoryDatabase.TryGetWithIdentifier("Kekelands_KamAdulthood");
+            BackstoryDef adultBackstory =
+                DefDatabase<BackstoryDef>.GetNamedSilentFail("Kekelands_KamAdulthood");
 
             if (adultBackstory != null)
                 pawn.story.Adulthood = adultBackstory;
@@ -93,7 +73,7 @@ namespace AzamPrime
                 DefDatabase<HairDef>.GetNamedSilentFail("Shaved");
 
             if (hair != null)
-                pawn.story.HairDef = hair;
+                pawn.story.hairDef = hair;
 
             // Мужской тип тела
             pawn.story.bodyType = BodyTypeDefOf.Male;

@@ -13,31 +13,11 @@ namespace AzamPrime
                 DefDatabase<PawnKindDef>.GetNamed("Kekelands_Temz");
 
             PawnGenerationRequest request = new PawnGenerationRequest(
-                pawnKind,
-                Faction.OfPlayer,
-                PawnGenerationContext.NonPlayer,
-                -1,
-                true,
-                false,
-                false,
-                false,
-                true,
-                false,
-                1f,
-                false,
-                true,
-                true,
-                false,
-                false,
-                false,
-                false,
-                null,
-                null,
-                null,
-                null,
-                null,
-                Gender.Male,
-                null
+                kind: pawnKind,
+                faction: Faction.OfPlayer,
+                context: PawnGenerationContext.NonPlayer,
+                forceGenerateNewPawn: true,
+                fixedGender: Gender.Male
             );
 
             Pawn pawn = PawnGenerator.GeneratePawn(request);
