@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<IncidentDef>
+		<defName>Kekelands_TemzArrival</defName>
+		<label>Прибытие Темза</label>
+		<workerClass>AzamPrime.IncidentWorker_TemzArrival</workerClass>
+		<category>Misc</category>
+
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+	</IncidentDef>
+
+</Defs>

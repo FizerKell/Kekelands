@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_KamAdulthood</defName>
+		<slot>Adulthood</slot>
+
+		<title>Без образования</title>
+		<titleShort>Без образования</titleShort>
+
+		<baseDesc>[PAWN_nameDef] не получил полноценного образования и с ранних лет занимался простым физическим трудом.</baseDesc>
+
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+
+</Defs>

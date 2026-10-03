@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<BackstoryDef>
+		<defName>Kekelands_DedNaPovodkeChildhood</defName>
+		<slot>Childhood</slot>
+
+		<title>Дитя лесов</title>
+		<titleShort>Дитя лесов</titleShort>
+
+		<baseDesc>
+			[PAWN_nameDef] был младенцем, когда сошедшая с ума мать оставила его в лесу.
+
+			[PAWN_nameDef] воспитывали одичавшие люди. Его знали и как любителя животных, и как их губителя.
+		</baseDesc>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Kekelands_DedNaPovodkeAdulthood</defName>
+		<slot>Adulthood</slot>
+
+		<title>Житель поселения</title>
+		<titleShort>Житель поселения</titleShort>
+
+		<baseDesc>
+			[PAWN_nameDef] был поселенцем в одном из колониальных миров.
+
+			При такой жизни нужно быть мастером на все руки в самых основных делах.
+		</baseDesc>
+	</BackstoryDef>
+
+</Defs>

@@ -1,0 +1,83 @@
+using RimWorld;
+using Verse;
+
+namespace AzamPrime
+{
+    public class IncidentWorker_TemzArrival : IncidentWorker
+    {
+        protected override bool TryExecuteWorker(IncidentParms parms)
+        {
+            Map map = (Map)parms.target;
+
+            PawnKindDef pawnKind =
+                DefDatabase<PawnKindDef>.GetNamed("Kekelands_Temz");
+
+            PawnGenerationRequest request = new PawnGenerationRequest(
+                pawnKind,
+                Faction.OfPlayer,
+                PawnGenerationContext.NonPlayer,
+                -1,
+                true,
+                false,
+                false,
+                false,
+                true,
+                false,
+                1f,
+                false,
+                true,
+                true,
+                false,
+                false,
+                false,
+                false,
+                null,
+                null,
+                null,
+                null,
+                null,
+                Gender.Male,
+                null
+            );
+
+            Pawn pawn = PawnGenerator.GeneratePawn(request);
+
+            if (pawn == null)
+                return false;
+
+            // Имя
+            pawn.Name = new NameSingle("Темз");
+
+            // Всё остальное оставляем стандартной генерации RimWorld:
+            // возраст, трейты, навыки, страсти, биографии,
+            // одежда, оружие, вещи и внешность.
+
+            IntVec3 spawnCell;
+
+            if (!CellFinder.TryFindRandomEdgeCellWith(
+                c => map.reachability.CanReachColony(c),
+                map,
+                CellFinder.EdgeRoadChance_Neutral,
+                out spawnCell))
+            {
+                spawnCell = map.Center;
+            }
+
+            GenSpawn.Spawn(
+                pawn,
+                spawnCell,
+                map,
+                WipeMode.Vanish
+            );
+
+            Find.LetterStack.ReceiveLetter(
+                "Прибытие Темза",
+                "Темз прибыл в колонию.",
+                LetterDefOf.PositiveEvent,
+                new LookTargets(pawn)
+            );
+
+            return true;
+        }
+    }
+}

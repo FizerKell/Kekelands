@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<PawnKindDef>
+		<defName>Kekelands_Temz</defName>
+		<label>Темз</label>
+		<race>Kekelands_Migrant</race>
+		<combatPower>50</combatPower>
+	</PawnKindDef>
+
+</Defs>
